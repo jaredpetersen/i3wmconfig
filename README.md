@@ -1,8 +1,6 @@
 i3wmconfig
 ==========
 
-Cofiguration information for i3:
-
 Instructions:
 
 1. Install any of the operating systems that i3wm supports (http://i3wm.org/downloads/). If you are installing the OS in VirtualBox, make sure that you install the guest additions.
@@ -15,9 +13,11 @@ Instructions:
 
 5. Success!
 
+
 Possible Issues:
 
 I found that opening up the Nautilus file manager in i3 opens up a new desktop that you cannot close. To fix this, open up the terminal and enter the following: gsettings set org.gnome.desktop.background show-desktop-icons false
+
 
 Information about the configuring (ricing) i3:
 
