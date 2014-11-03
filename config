@@ -164,8 +164,8 @@ bar {
 # Window Configuration
 # Class                 border  backgr. text    indic.
 client.focused          #0276fd #0276fd #ffffff #000000
-client.focused_inactive #cccccc #ffffff #000000 #cccccc
-client.unfocused        #ffffff #ffffff #000000 #cccccc
+client.focused_inactive #cccccc #cccccc #000000 #cccccc
+client.unfocused        #cccccc #cccccc #000000 #cccccc
 client.urgent           #0276fd #0276fd #ffffff #000000
 
 # Open the Network Settings
