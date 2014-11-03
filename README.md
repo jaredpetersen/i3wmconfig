@@ -22,3 +22,7 @@ I found that opening up the Nautilus file manager in i3 opens up a new desktop t
 Information about the configuring (ricing) i3:
 
 The configuration file is located at ~/.i3/config . You can replace the configuration file in your directory with the one here as long as you edit some of the machine-specific settings (audio, brightness, etc.) Your best resource for configuring i3 is the i3 User Guide (http://i3wm.org/docs/userguide.html) and the article "Setting Up My Linux to be Less Ugly" (http://hndr.me/blog/making-my-new-linux-less-ugly/) by blogger HNDR.
+
+To alter the status bar, check out the guide on i3status: http://i3wm.org/i3status/manpage.html . The configuration file should be located at ~/.config/i3status/config .
+
+To set the wallpaper, I recommend that you install feh and alter the feh configuration information at the bottom of the i3 config file so that it is set on startup.
