@@ -4,7 +4,7 @@
 #
 # Edited configuration by Jared Petersen
 
-# i3 config file (v4)
+# i3 config file (v5)
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
@@ -29,7 +29,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -fn '-misc-fixed-medium-r-normal-*-18-120-100-100-C-90-iso10646-1' -nb '#ffffff' -nf '#000000' -sb '#0276fd' -sf '#ffffff'
+bindsym $mod+d exec dmenu_run -b -nb '#ffffff' -nf '#000000' -sb '#65B354' -sf '#000000'
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -86,27 +86,27 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
+bindsym $mod+1 workspace "1:1"
+bindsym $mod+2 workspace "2:2"
+bindsym $mod+3 workspace "3:3"
+bindsym $mod+4 workspace "4:4"
+bindsym $mod+5 workspace "5:5"
+bindsym $mod+6 workspace "6:6"
+bindsym $mod+7 workspace "7:7"
+bindsym $mod+8 workspace "8:8"
+bindsym $mod+9 workspace "9:9"
 bindsym $mod+0 workspace "10:0"
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1
-bindsym $mod+Shift+2 move container to workspace 2
-bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+6 move container to workspace 6
-bindsym $mod+Shift+7 move container to workspace 7
-bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+1 move container to workspace "1:1"
+bindsym $mod+Shift+2 move container to workspace "2:2"
+bindsym $mod+Shift+3 move container to workspace "3:3"
+bindsym $mod+Shift+4 move container to workspace "4:4"
+bindsym $mod+Shift+5 move container to workspace "5:5"
+bindsym $mod+Shift+6 move container to workspace "6:6"
+bindsym $mod+Shift+7 move container to workspace "7:7"
+bindsym $mod+Shift+8 move container to workspace "8:8"
+bindsym $mod+Shift+9 move container to workspace "9:9"
 bindsym $mod+Shift+0 move container to workspace "10:0"
 
 # reload the configuration file
@@ -148,25 +148,24 @@ bar {
 	position top
         status_command i3status
         tray_output none
-        strip_workspace_numbers yes
+	strip_workspace_numbers yes
 	colors {
-		background #ffffff
-		statusline #000000
-        	separator #000000
-
-		focused_workspace  #0276fd #0276fd #ffffff
-        	active_workspace   #0276fd #0276fd #ffffff
-        	inactive_workspace #ffffff #ffffff #000000
-        	urgent_workspace   #0276fd #0276fd #ffffff
+		background #000000
+		statusline #65B354
+        	separator  #ffffff
+		focused_workspace  #65B354 #65B354 #000000
+        	active_workspace   #65B354 #65B354 #000000
+        	inactive_workspace #000000 #000000 #ffffff
+        	urgent_workspace   #65B354 #65B354 #000000
 	}
 }
 
 # Window Configuration
 # Class                 border  backgr. text    indic.
-client.focused          #0276fd #0276fd #ffffff #000000
-client.focused_inactive #cccccc #cccccc #000000 #cccccc
-client.unfocused        #cccccc #cccccc #000000 #cccccc
-client.urgent           #0276fd #0276fd #ffffff #000000
+client.focused          #65B354 #65B354 #000000 #65B354
+client.focused_inactive #ffffff #ffffff #000000 #ffffff
+client.unfocused        #ffffff #ffffff #000000 #ffffff
+client.urgent           #65B354 #65B354 #000000 #65B354
 
 # Open the Network Settings
 bindsym $mod+F2 exec unity-control-center network
@@ -184,4 +183,7 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 # Set Wallpaper
-exec --no-startup-id feh --bg-fill ~/Pictures/Wallpaper/pokemonredbluewatercolor.jpg
+exec --no-startup-id xsetroot -solid "#000000"
+
+# Start Terminal
+exec --no-startup-id gnome-terminal

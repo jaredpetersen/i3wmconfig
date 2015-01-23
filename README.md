@@ -13,11 +13,10 @@ Configuration File Locations
 
 To configure your i3 setup to be exactly like mine (screenshot coming soon), replace your configuration files with the ones in this repository. The configuration files are located as listed:
 - i3:  ~/.i3/config
-- i3status: ~/.config/i3status/config
+- i3status: /etc/i3status.conf
 
-It is important to not that my keybindings may not work for you hardware differences (brightness/audio keybindings), software differences (particularly in the case of feh), or even personal preferences. I heavily recommend that you install feh to manage your desktop background, as that is what I use in this configuration.
+It is important to not that my keybindings may not work for you hardware differences (brightness/audio keybindings), software differences, or even personal preferences.
 
 TO DO
 =====
-- Fix keybindings for volume up, down, and mute
 - Customize GTK theme
