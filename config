@@ -151,21 +151,21 @@ bar {
 	strip_workspace_numbers yes
 	colors {
 		background #000000
-		statusline #F8D030
+		statusline #f8d030
         	separator  #ffffff
-		focused_workspace  #F8D030 #F8D030 #000000
-        	active_workspace   #F8D030 #F8D030 #000000
-        	inactive_workspace #000000 #000000 #ffffff
-        	urgent_workspace   #F8D030 #F8D030 #000000
+		focused_workspace  #f8d030 #f8d030 #ffffff
+        	active_workspace   #f8d030 #f8d030 #ffffff
+        	inactive_workspace #000000 #000000 #f8d030
+        	urgent_workspace   #f8d030 #f8d030 #ffffff
 	}
 }
 
 # Window Configuration
 # Class                 border  backgr. text    indic.
-client.focused          #F8D030 #F8D030 #000000 #F8D030
-client.focused_inactive #ffffff #ffffff #000000 #ffffff
-client.unfocused        #ffffff #ffffff #000000 #ffffff
-client.urgent           #F8D030 #F8D030 #000000 #F8D030
+client.focused          #f8d030 #f8d030 #ffffff #f8d030
+client.focused_inactive #f8d030 #f8d030 #000000 #f8d030
+client.unfocused        #f8d030 #f8d030 #000000 #f8d030
+client.urgent           #f8d030 #f8d030 #ffffff #f8d030
 
 # Open the Network Settings
 bindsym $mod+F2 exec unity-control-center network
@@ -183,4 +183,4 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 # Set Wallpaper
-exec --no-startup-id xsetroot -solid "#F8D030"
+exec --no-startup-id xsetroot -solid "#f8d030"
