@@ -9,13 +9,13 @@ Installation Instructions
 1. Clone or download the repository
   * `$ git clone https://github.com/jaredpetersen/i3wmconfig/`
 2. Create a "Configs" directory inside your `$HOME` directory
-  * `mkdir Configs`
+  * `$ mkdir Configs`
 3. Copy the files in the downloaded repository's `Configs` directory to the newly created directory
-  * `cp <DOWNLOADED REPO FILE LOCATION>/* ~/Configs`
+  * `$ cp <DOWNLOADED REPO FILE LOCATION>/* ~/Configs`
 4. Copy one of the config files into the i3wm configuration location and rename it to config in the process
-  * `cp ~/Configs/config0 ~/.i3/config`
+  * `$ cp ~/Configs/config0 ~/.i3/config`
 5. Copy the i3status.conf file to the proper configuration location
-  * `cp <DOWNLOADED REPO FILE LOCATION>/i3status.conf /etc/i3status.conf`
+  * `$ cp <DOWNLOADED REPO FILE LOCATION>/i3status.conf /etc/i3status.conf`
 
 Gallery
 =======
