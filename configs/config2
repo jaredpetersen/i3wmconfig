@@ -186,4 +186,4 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 exec --no-startup-id xsetroot -solid "#cb0810"
 
 # Config Regeneration
-exec --no-startup-id ~/Configs/config_select.sh
+exec --no-startup-id ~/configs/config_select.sh
